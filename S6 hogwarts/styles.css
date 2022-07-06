@@ -1,0 +1,74 @@
+header{
+   background-image: url(images/banner.jpg); 
+   width: 100%;
+   height: 85vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+header h1{
+    color: white;
+    text-align: center;
+    padding-top: 25vh;
+    font-size: 100px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+    color: white;
+}
+nav{
+    background-color: black;
+    overflow: auto;
+    width: 100%;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    float: left;
+    padding: 27px;
+    font-size: 17px;
+    width: 15%;
+    text-align: center;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.container h2{
+    text-align: center;
+}
+.container {
+    padding: 15px;
+}
+.float-left{
+    float: left;
+    width: 40%;
+}
+.float-right{
+    float: right;
+    width: 40%;
+}
+#article2{
+    clear: both;
+}
+img{
+    width: 450px;
+}
+h2{
+    padding-top: 45px;
+    padding-bottom: 25px;in
+    margin-top: 0px;
+    margin: 0px;
+}
+#testimonials{
+    clear: both;
+    text-align: center;
+}
+#testimonials p{
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+article{
+    clear: both;
+}
