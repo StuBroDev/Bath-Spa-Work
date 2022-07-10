@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+<script>
+
+function myFunction(){
+    document.getElementById("demo").innerHTML="Paragraph changed.";
+}
+
+function turnOn(){
+    document.getElementById("myImage").src="pic_bulbon.gif"
+}
+function turnOff(){
+    document.getElementById("myImage").src="pic_bulboff.gif"
+}
+
+window.alert(5+6);
+
+console.log("I am in the console");
+
+function calculate(pi1,pi2){
+    let answer = pi2 + pi1
+    return answer
+}
+
+function updateResult() {
+    let n1, n2, output, anw;
+
+    n1 = document.getElementById("num1").value
+    n2 = document.getElementById("num2").value
+    anw = calculate(n2,n1)
+    output = "<hr><br>" + anw + "<hr>"
+
+    anw = calculate(n1,n2)
+    output ="<hr><br>" + anw  + "<hr>"
+
+    document.getElementById("answer").innerHTML = output
+}
+</script>
+
+
+</head>
+<body>
+    <p id="demo">
+        Here is the original text.
+    </p>
+    <button onclick="myFunction()">Change</button>
+<hr>
+    <h2>What can JavaScript do?</h2>
+    <p>
+        JavaScript can change HTML attributes.
+    </p>
+    <p>
+        In this case JavaScript changes the value of the src(source) attribute of an image.
+    </p>
+    <button onclick="turnOn()">Turn on the light</button>
+    <img id="myImage" src="pic_bulbon.gif" style="width:100px">
+    <button onclick="turnOff()">Turn off the light</button>
+    <hr>
+<button onclick="window.print()">Print</button>
+
+<input type="text" id="num1">
+<input type="text" id="num2">
+
+<p id="answer"onclick="updateResult()">
+No answer!
+</p>
+
+</body>
+</html>

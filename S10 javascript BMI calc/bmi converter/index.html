@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items:center;
+text-align: center;
+}
+.box{
+background-color: red;
+width: 450px;
+height: 270px;
+color: white;
+margin-top: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.box h2{
+font-size: 20px;    
+}
+.whbox{
+width:100%;
+height:30px;
+margin-top: 10px;
+margin-bottom:10px;
+padding: 18px;
+font-size: 14px;
+font-weight: bold;
+}
+#width{
+margin-right: 10px;
+height: 30px;
+width: 150px;
+text-align: center;
+border-radius: 0px;
+border: none;
+font-weight: bold;
+}
+#height{
+margin-left: 10px;
+margin-right: 10px;
+height: 30px;
+width: 150px;
+text-align: center; 
+border-radius: 0px;
+border: none;
+font-weight: bold;   
+}
+#answer {
+width: 100px;
+height: 35px;
+font-size: 35px;
+margin-bottom: 20px;
+}
+#btn{
+width: 150px;
+height: 37px;
+color: red; 
+font-weight: bold;
+border-radius: 0px;
+border: none;
+margin-bottom: 10px;
+background-color: white;
+cursor: pointer;
+}
+</style>
+
+    <script>
+        function calculate(w,h){
+    let answer = 10000 * (w / (h ** 2)) //bmi calculation is 10000 x (width / (height squared))
+    return answer // answer 
+}
+
+function bmiResult() {
+    
+    let w = document.getElementById("width").value 
+    let h = document.getElementById("height").value
+
+    let anw = calculate(h,w)
+    let output = anw 
+
+    anw = calculate(w,h)
+    output = anw.toFixed(1); //rounds down number to one digital place
+
+    document.getElementById("answer").innerHTML = output//
+}
+
+    </script>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>To calculate your BMI <br>enter your weight and height</h2>
+                <div class="whbox">
+                    <input type="text" id="width">kg
+                    <input type="text" id="height">cm 
+                </div>
+                <input type="button" id="btn" onclick="bmiResult()"value="Click for BMI">
+                <p id="answer"></p>       
+        </div>
+    </div>
+</body>
+</html>
