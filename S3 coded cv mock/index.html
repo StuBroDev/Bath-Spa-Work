@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV mock</title>
+</head>
+<style>
+body{
+line-height: 22px;
+}
+.outerwrap{
+width: 100%;
+display: flex;
+flex-direction: row;
+}
+.col1{
+width:200px;
+height: 100vh;
+padding: 25px;
+}
+.col2{
+width:80%;
+height: 100vh;
+padding: 25px;
+}
+.circlecontainer{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.circle{
+display: flex;
+width:160px;
+height: 160px;
+border-radius: 100%;
+background-color: blue;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+margin-top: 10px;
+}
+.circle h1{
+font-size: 90px;
+color: white;
+}
+/*outer box - left and right boxes inside*/
+.skillsbox{
+display: flex;
+flex-direction: row;
+width: 100%;
+margin-top: -10px;
+}
+.skillsbox ul {
+list-style: none;
+padding: 0px;
+}
+.skillsleft{
+display: flex;
+align-items: stretch;
+}
+.skillsright{
+display: flex;
+align-items: stretch;
+margin-left: 80px;
+}
+/*boxes with text and lines in*/
+.htmlbox{
+width: 100%;
+margin-bottom: 10px; 
+}
+.cssbox{
+width: 100%; 
+margin-bottom: 10px;    
+}
+.javabox{
+width: 100%;
+margin-bottom: 10px;     
+}
+.indbox{
+width: 100%;
+margin-bottom: 10px;   
+}
+.psbox{
+width: 100%; 
+margin-bottom: 10px;    
+}
+.illbox{
+width: 100%;
+margin-bottom: 10px;     
+}
+
+/*2-colour line boxes*/
+.htmllinebox{
+display: flex;
+flex-direction: row;
+}
+.csslinebox{
+display: flex;
+flex-direction: row;
+}
+.javalinebox{
+display: flex;
+flex-direction: row;
+}
+.indlinebox{
+display: flex;
+flex-direction: row;
+}
+.pslinebox{
+display: flex;
+flex-direction: row;
+}
+.illlinebox{
+display: flex;
+flex-direction: row;
+}
+.htmlline{
+height: 5px;
+width: 100px;
+background: blue;
+margin-top: 5px;
+}
+.htmlgrayline{
+height: 5px;
+width: 50px;
+background: gray;
+margin-top: 5px;
+}
+.cssline{
+height: 5px;
+width: 75px;
+background: blue;
+margin-top: 5px;
+}
+.cssgrayline{
+height: 5px;
+width: 75px;
+background: gray;
+margin-top: 5px;
+}
+.javaline{
+height: 5px;
+width: 25px;
+background: blue;
+margin-top: 5px;
+}
+.javagrayline{
+height: 5px;
+width: 125px;
+background: gray;
+margin-top: 5px;
+}
+.indline{
+height: 5px;
+width: 100px;
+background: blue;
+margin-top: 5px;
+}
+.indgrayline{
+height: 5px;
+width: 50px;
+background: gray;
+margin-top: 5px;
+}
+.psline{
+height: 5px;
+width: 120px;
+background: blue;
+margin-top: 5px;
+}
+.psgrayline{
+height: 5px;
+width: 30px;
+background: gray;
+margin-top: 5px;
+}
+.illline{
+height: 5px;
+width: 75px;
+background: blue;
+margin-top: 5px;
+}
+.illgrayline{
+height: 5px;
+width: 75px;
+background: gray;
+margin-top: 5px;
+}
+.samplebox{
+font-size: 10px;
+padding-top:5px;
+position: static;
+text-align: right;
+}
+</style>
+
+<body>
+    <div class="outerwrap">
+        <div class="col1">
+            <div class="circlecontainer">
+                <div class="circle">
+                    <h1>CV</h1>
+                </div>
+            </div>
+                <h3>Profile</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit porro qui expedita eius ut totam, rerum laboriosam! Sapiente aliquam quis dolores, quos nemo tempora earum ipsum maxime facere quae at fugit, neque ad iure ullam ratione cupiditate.
+                    </p>
+                    <h3>Contact</h3>
+                    <p><strong>Phone:</strong></p>
+                    <p> 01234 567890</p>
+                    <p><strong>Email:</strong></p>
+                    <p> joebloggs@mailaddress.com</p>
+                    <p><strong>Website:</strong></p>
+                    <p> www.joebloggs.com</p>
+            </div>
+
+        <div class="col2">
+            <div class="samplebox"><strong>CV example SB0622</strong></div>       
+                <h3>Education</h3>
+                <p>Qualification // Institution</p>
+                <p>Qualification // Institution</p>
+                <p>Qualification // Institution</p>
+                <h3>Work Experience</h3>
+                <h4>Company // Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minima consectetur eveniet debitis sunt repellat illo nesciunt, facilis sint inventore ipsum dolorum architecto magnam nisi nobis, delectus harum voluptatum quasi suscipit, doloribus aspernatur voluptatibus necessitatibus. Laudantium nobis ab magni rem similique harum delectus asperiores cupiditate? Asperiores, cupiditate. Sint, corrupti veniam?
+                </p>
+                <h4>Company // Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minima consectetur eveniet debitis sunt repellat illo nesciunt, facilis sint inventore ipsum dolorum architecto magnam nisi nobis, delectus harum voluptatum quasi suscipit, doloribus aspernatur voluptatibus necessitatibus. Laudantium nobis ab magni rem similique harum delectus asperiores cupiditate? Asperiores, cupiditate. Sint, corrupti veniam?
+                </p>
+                <h4>Company // Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minima consectetur eveniet debitis sunt repellat illo nesciunt, facilis sint inventore ipsum dolorum architecto magnam nisi nobis, delectus harum voluptatum quasi suscipit, doloribus aspernatur voluptatibus necessitatibus. Laudantium nobis ab magni rem similique harum delectus asperiores cupiditate? Asperiores, cupiditate. Sint, corrupti veniam?
+                </p>
+                <h3>Professional Training</h3>
+                <p>Course Name // Institution</p>
+                <p>Course Name // Institution</p>
+                <p>Course Name // Institution</p>
+
+                <h3>Tech Skills</h3>
+                <div class="skillsbox">
+                    <div class="skillsleft">
+                        <ul>
+                            <div class="htmlbox">
+                                <li> Skill</li>
+                                <div class="htmllinebox">
+                                    <div class="htmlline"></div>
+                                    <div class="htmlgrayline"></div>
+                            </div>              
+                            </div>
+                            <div class="cssbox">
+                                <li> Skill</li>
+                                <div class="csslinebox">
+                                    <div class="cssline"></div>
+                                    <div class="cssgrayline"></div>
+                            </div>              
+                            </div>
+                            <div class="javabox">
+                                <li> Skill</li>
+                                <div class="javalinebox">
+                                    <div class="javaline"></div>
+                                    <div class="javagrayline"></div>
+                            </div>              
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="skillsright">
+                        <ul>
+                            <div class="indbox">
+                                <li> Skill</li>
+                                <div class="indlinebox">
+                                    <div class="indline"></div>
+                                    <div class="indgrayline"></div>
+                            </div>              
+                            </div>
+                            <div class="psbox">
+                                <li> Skill</li>
+                                <div class="pslinebox">
+                                    <div class="psline"></div>
+                                    <div class="psgrayline"></div>
+                            </div>              
+                            </div>
+                            <div class="illbox">
+                                <li> Skill</li>
+                                <div class="illlinebox">
+                                    <div class="illline"></div>
+                                    <div class="illgrayline"></div>
+                            </div>              
+                            </div>
+                        </ul>
+                    </div>                
+                </div>
+                <h3>Interests</h3>
+                <p>Interests in here</p>     
+        </div>
+    </div>
+</body>
+</html>
