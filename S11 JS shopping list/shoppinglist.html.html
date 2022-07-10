@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>My shopping list</p>
+    <input type="text" id="item">
+    <input type="button" value="Add item" onclick="addItem()">
+    <p id="output"></p>
+   
+    <script>
+
+let list = ['apples','oranges'];
+
+function addItem() {
+let userItem = document.getElementById('item').value;
+    if (list.includes(userItem) == true){
+        window.alert('item already in list');
+    } else {
+        list.push(userItem);
+    }
+    document.getElementById('item').value = "";
+    document.getElementById('output').innerHTML = list;   
+}
+    
+    </script>
+</body>
+</html>
