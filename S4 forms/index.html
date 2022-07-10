@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTMLForm</title>
+    </head>
+    <style>
+#comments{
+line-height:10;
+}
+#address{
+line-height:7;
+}
+h1{
+padding-left: 50px;
+padding-top: 50px;
+padding-bottom: 25px;
+}
+.outerwrapper{
+margin: auto;
+padding: 0px;
+}
+.container{
+margin-left: 50px;
+}
+.container2{
+margin-left: 50px; 
+}
+
+#submitnow{
+margin-left: 50px;
+margin-bottom: 25px;
+}
+
+.container3{
+display: flex;
+width:400px;
+height: q250px;
+background-color: red;
+flex-direction: row;
+margin-left: 50px;
+padding: 5px;
+justify-content: center;
+}
+.box1{
+height: 25px;
+width: 35px;
+background-color: blue;   
+}
+.box2{
+height: 25px;
+width: 35px;
+background-color: green;   
+}
+.box3{
+height: 25px;
+width: 35px;
+background-color: yellow;   
+}
+ </style>
+   
+   <header>
+        <h1>Feedback Form</h1>
+    </header>
+    <body>
+        <div class="outerwrapper">
+            <form action="">
+                    <div class="container">
+                        <label for="yname">Your Name</label><br>
+                        <input type="text" id="yname" name="yname" value="" size="63">
+                        <br><br>   
+                        <label for="dob">Date Of Birth </label>       
+                        <input type="date" name="dob" id="dob">
+                        <br><br>
+                        <label for="gender">Gender</label>
+                        <input type="radio" name="gen1" id="gen1">
+                        <label for="radio">Male </label>
+                        <input type="radio" name="gen1" id="gen1">
+                        <label for="radio">Female </label>
+                        <br><br>
+                        <label for="address">Address</label><br>
+                        <input type="text" id="address" name="address" value="" size="63"><br>
+                        <br>
+                        <label for="phone">Phone</label><br>
+                        <input type="text" id="phone" name="phone" value=""size="63">
+                        <br><br>
+                        <label for="name">Email</label><br>
+                        <input type="text" id="phone" name="phone" value=""size="63">
+                    </div>
+                    <div class="container2">
+                        <h2>Please rate from 1-5</h2>
+
+                        <label for="rate1">How do you like this feedback form?</label>
+                        <input type="radio" name="rate1" id="rate1">
+                        <label for="radio"> </label>
+                        <input type="radio" name="rate1" id="rate1">
+                        <label for="radio"></label>
+                        <input type="radio" name="rate1" id="rate1">
+                        <label for="radio"> </label>
+                        <input type="radio" name="rate1" id="rate1">
+                        <label for="radio"></label>
+                        <input type="radio" name="rate1" id="rate1">
+                        
+                        <h2>Additional comments</h2>
+                        <label for="comments"></label>
+                        <input type="text" id="comments" name="" value="" size="63">
+                        <br><br>
+                        
+                    </div>
+            </form>
+        </div>
+        <div class="submitbit">
+            <input type="submit" name="" id="submitnow" value="Click to submit">
+            <input type="reset">
+        </div>
+
+    </body>
+
+</html>
+
+
+
