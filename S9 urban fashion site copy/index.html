@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</head>
+<body>
+    <div class="topnav"id="myTopnav">               
+        <a href="">
+            <img src="img/logo.png" alt=""width="130px">
+        </a>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Collections</a>
+            <a href="#">Category</a>
+            <div class="cart">
+                <a href="#">
+                <img src="img/cart.png" alt=""width="40px">
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">  
+                <i class="fa fa-bars"></i>
+              </a>
+    </div>
+    </div>
+    <div class="main">
+    <div class="left-content">
+        <a href="http://facebook.com">
+            <img src="img/facebook.png" alt=""width="18px">
+        </a>
+        <a href="http://instagram.com">
+            <img src="img/instagram.png" alt=""width="18px">
+        </a>
+        <a href="http://twitter.com">
+            <img src="img/twitter.png" alt=""width="18px">
+        </a>
+        <a href="http://linkedin.com">
+            <img src="img/linkedin.png" alt=""width="18px">
+        </a>
+
+    </div>
+    <div class="middle-content">
+        <a href="https://www.google.com">
+            <button class="collections">Collections 2022</button>
+            </a> 
+        <h1>You should always <br> feel pretty</h1>
+        <p>Clothes that are sure to heat up your winter</p>
+        <div class="arrows">
+            <a href="#">
+                <img src="img/back-arrow.png" alt=""width="35px">
+            </a>
+            <a href="#">
+                <img src="img/next-arrow.png" alt=""width="35px">
+            </a>
+        </div>
+    </div>
+    <div class="right-content">
+        <img src="img/img.png" alt=""width="">
+    </div>
+</body>
+</html>
